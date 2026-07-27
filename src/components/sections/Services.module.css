@@ -1,0 +1,112 @@
+.servicesSection {
+  background-color: #121212;
+}
+
+.sectionSubtitle {
+  text-align: center;
+  max-width: 700px;
+  margin: -2rem auto 4rem;
+  color: var(--color-gray);
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.servicesGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+
+.serviceCard {
+  background: #1A1A1A;
+  border-radius: 1rem;
+  padding: 2.5rem 2rem;
+  box-shadow: var(--shadow-md);
+  position: relative;
+  overflow: hidden;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  z-index: 1;
+}
+
+.serviceCard:hover {
+  transform: translateY(-10px);
+  box-shadow: var(--shadow-premium);
+  border-color: transparent;
+}
+
+.iconContainer {
+  width: 70px;
+  height: 70px;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+  position: relative;
+  z-index: 2;
+  transition: all 0.3s ease;
+}
+
+.iconBlue {
+  background: rgba(21, 101, 192, 0.1);
+  color: var(--color-primary);
+}
+
+.iconOrange {
+  background: rgba(245, 158, 11, 0.1);
+  color: var(--color-accent);
+}
+
+.serviceCard:hover .iconBlue,
+.serviceCard:hover .iconOrange {
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: var(--shadow-md);
+}
+
+.serviceTitle {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--color-white);
+  margin-bottom: 1rem;
+  position: relative;
+  z-index: 2;
+  transition: color 0.3s ease;
+}
+
+.serviceDescription {
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 1.6;
+  position: relative;
+  z-index: 2;
+  transition: color 0.3s ease;
+  text-align: left;
+}
+
+.cardHoverEffect {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: var(--color-accent);
+  z-index: 0;
+  transition: all 0.4s ease;
+  transform: scaleX(0);
+  transform-origin: left;
+}
+
+.serviceCard:hover .cardHoverEffect {
+  transform: scaleX(1);
+}
+@media (max-width: 1024px) {
+  .servicesGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .servicesGrid {
+    grid-template-columns: 1fr;
+  }
+}
