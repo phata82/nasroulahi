@@ -75,7 +75,7 @@
 .description {
   font-size: 1.1rem;
   line-height: 1.7;
-  color: var(--color-gray);
+  color: var(--color-white);
   margin-bottom: 2.5rem;
 }
 
@@ -143,6 +143,7 @@
   .imageWrapper {
     height: 500px;
     max-width: 600px;
+    width: 100%;
     margin: 0 auto;
   }
 }
