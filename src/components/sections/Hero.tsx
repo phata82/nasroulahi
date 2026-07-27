@@ -10,7 +10,7 @@ export default function HeroSection() {
       <div className={styles.overlay}></div>
       <div className={styles.background}>
         <Image 
-          src="https://images.unsplash.com/photo-1586528116311-ad8ed7c50a30?q=80&w=2000&auto=format&fit=crop" 
+          src="/hero-bg.png" 
           alt="Logistique et transport maritime"
           fill
           priority

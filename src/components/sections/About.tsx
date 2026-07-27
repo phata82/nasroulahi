@@ -10,7 +10,7 @@ export default function AboutSection() {
         <div className={styles.imageWrapper}>
           <div className={styles.imageMain}>
             <Image 
-              src="https://images.unsplash.com/photo-1566847416390-3cb83fc524d7?q=80&w=1000&auto=format&fit=crop" 
+              src="/about-bg.png" 
               alt="Entrepôt logistique Nasroulahi Holding" 
               fill
               className={styles.image}
