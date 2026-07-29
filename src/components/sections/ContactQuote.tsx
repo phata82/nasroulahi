@@ -31,20 +31,23 @@ export default function ContactQuote() {
           </div>
           
           <div id="quote" className={styles.formCol}>
-            <form className={styles.form}>
+            <form action="https://formsubmit.co/nasroulahiholdingsarl@gmail.com" method="POST" className={styles.form}>
+              <input type="hidden" name="_subject" value="Nouvelle Demande de Devis - Site Web" />
+              <input type="hidden" name="_template" value="table" />
+              
               <div className={styles.formGroup}>
                 <label htmlFor="name">Nom complet ou Entreprise *</label>
-                <input type="text" id="name" required placeholder="Votre nom" className={styles.input} />
+                <input type="text" id="name" name="name" required placeholder="Votre nom" className={styles.input} />
               </div>
               
               <div className={styles.formRow}>
                 <div className={styles.formGroup}>
                   <label htmlFor="email">Email *</label>
-                  <input type="email" id="email" required placeholder="votre@email.com" className={styles.input} />
+                  <input type="email" id="email" name="email" required placeholder="votre@email.com" className={styles.input} />
                 </div>
                 <div className={styles.formGroup}>
                   <label htmlFor="phone">Téléphone *</label>
-                  <input type="tel" id="phone" required placeholder="+221..." className={styles.input} />
+                  <input type="tel" id="phone" name="phone" required placeholder="+221..." className={styles.input} />
                 </div>
               </div>
               
@@ -62,7 +65,7 @@ export default function ContactQuote() {
               
               <div className={styles.formGroup}>
                 <label htmlFor="message">Votre message ou détails de la demande *</label>
-                <textarea id="message" rows={5} required placeholder="Détaillez votre besoin ici..." className={styles.input}></textarea>
+                <textarea id="message" name="message" rows={5} required placeholder="Détaillez votre besoin ici..." className={styles.input}></textarea>
               </div>
               
               <button type="submit" className={styles.submitBtn}>
