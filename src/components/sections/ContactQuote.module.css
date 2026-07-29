@@ -1,5 +1,6 @@
 .contactSection {
   background-color: var(--color-dark);
+  scroll-margin-top: 100px;
 }
 
 .grid {
@@ -66,6 +67,7 @@
   border-radius: 1.5rem;
   box-shadow: var(--shadow-premium);
   border: 1px solid rgba(255, 255, 255, 0.05);
+  scroll-margin-top: 120px;
 }
 
 .form {
